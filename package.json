@@ -1,0 +1,19 @@
+{
+  "name": "store-module-generator",
+  "version": "0.0.1",
+  "description": "store module generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/client-util/store-module-generator.git"
+  },
+  "author": "Ace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/client-util/store-module-generator/issues"
+  },
+  "homepage": "https://github.com/client-util/store-module-generator#readme"
+}
