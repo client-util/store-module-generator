@@ -1,8 +1,8 @@
 // CONSTANT key
 // CONSTANT NAME
 
-import Constant from './lib/Constant';
-import Mutation from './lib/Mutation';
+const Constant = require('./lib/Constant');
+const Mutation = require('./lib/Mutation');
 
 const moduleGenertor = (config, NAME, cKey) => {
   if (!cKey) throw Error('Must give a config key');
@@ -12,6 +12,7 @@ const moduleGenertor = (config, NAME, cKey) => {
       CONSTANT
     })
   };
+  return module;
 };
 
-export default moduleGenertor;
+module.exports = moduleGenertor;

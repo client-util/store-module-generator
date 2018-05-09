@@ -1,11 +1,14 @@
+const mg = require('../index');
+
 const SYNC = {};
 
 SYNC.root = [
-  { TYPE: 'QUERY', storeName: 'query' },
-  { TYPE: 'IS_WD', storeName: 'is_wd' },
-  { TYPE: 'P_CODE', storeName: 'pCode' }
+  { TYPE: 'FOO', storeName: 'foo' },
+  { TYPE: 'BAR', storeName: 'bar' }
 ];
 
 const config = {
   SYNC
 };
+
+console.log(mg(config, 'TEST', 'root'));
