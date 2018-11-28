@@ -1,6 +1,6 @@
 {
   "name": "store-module-generator",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "store module generator",
   "main": "index.js",
   "scripts": {
