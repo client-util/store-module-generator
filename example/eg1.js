@@ -1,4 +1,4 @@
-const mg = require('../index')
+const mg = require('../lib/index').default
 
 const SYNC = {}
 

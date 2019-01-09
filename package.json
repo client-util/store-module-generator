@@ -1,8 +1,8 @@
 {
   "name": "store-module-generator",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "store module generator",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/client-util/store-module-generator/issues"
   },
-  "homepage": "https://github.com/client-util/store-module-generator#readme"
+  "homepage": "https://github.com/client-util/store-module-generator#readme",
+  "devDependencies": {
+    "tslib": "^1.9.3",
+    "typescript": "^3.2.2"
+  }
 }
