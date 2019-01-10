@@ -1,12 +1,13 @@
-const { type } = require('./util')
+import { type } from './util'
 
-module.exports = class Mutation {
+export default class Mutation {
   constructor({ CONSTANT }) {
     for (const ELE of CONSTANT.SYNC_LIST) {
       this[ELE.TYPE] = (state, payload) => {
         const storeName = ELE.storeName
         const data = payload[storeName]
-        if (data === undefined) throw Error('muation cannot find expected key: ' + storeName)
+        if (data === undefined)
+          throw Error('muation cannot find expected key: ' + storeName)
         if (type(data) === 'object') {
           state[storeName] = Object.assign(state[storeName], data)
           return

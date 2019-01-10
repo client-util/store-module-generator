@@ -1,10 +1,11 @@
 {
   "name": "store-module-generator",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "store module generator",
-  "main": "index.js",
+  "main": "./dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/client-util/store-module-generator/issues"
   },
-  "homepage": "https://github.com/client-util/store-module-generator#readme"
+  "homepage": "https://github.com/client-util/store-module-generator#readme",
+  "devDependencies": {
+    "buble": "^0.19.6",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1"
+  }
 }

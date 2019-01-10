@@ -1,4 +1,4 @@
-const mg = require('../index')
+import mg from '../src/index'
 
 const SYNC = {}
 

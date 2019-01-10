@@ -1,5 +1,5 @@
 // TYPE must different !! it's to identify ACTION
-module.exports = class Constant {
+export default class Constant {
   constructor(config, NAME, key) {
     const { SYNC, ASYNC } = config
     this.SYNC_LIST = []
