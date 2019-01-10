@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/client-util/store-module-generator#readme",
   "devDependencies": {
-    "buble": "^0.19.6",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.2.1"
   }

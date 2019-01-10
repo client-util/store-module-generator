@@ -17,3 +17,4 @@ export default (config, ACTION_NAME, cKey) => {
   }
   return module
 }
+

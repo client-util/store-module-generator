@@ -6,8 +6,7 @@ export default class Mutation {
       this[ELE.TYPE] = (state, payload) => {
         const storeName = ELE.storeName
         const data = payload[storeName]
-        if (data === undefined)
-          throw Error('muation cannot find expected key: ' + storeName)
+        if (data === undefined) throw Error('muation cannot find expected key: ' + storeName)
         if (type(data) === 'object') {
           state[storeName] = Object.assign(state[storeName], data)
           return
