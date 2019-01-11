@@ -4,7 +4,7 @@
 import Constant from './Constant'
 import Mutation from './Mutation'
 
-export default (config, ACTION_NAME, cKey) => {
+const mg = (config, ACTION_NAME, cKey) => {
   if (!cKey) throw Error('Must give a config key')
   if (!config.SYNC) throw Error('Must give a SYNC Object in config')
   const CONSTANT = new Constant(config, ACTION_NAME, cKey)
@@ -18,3 +18,4 @@ export default (config, ACTION_NAME, cKey) => {
   return module
 }
 
+export default mg
